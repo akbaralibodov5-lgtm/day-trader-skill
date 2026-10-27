@@ -29,7 +29,7 @@ def load_config(path: str) -> dict:
         "max_daily_loss_percent": 2.0, "max_spread_points": 25,
         "max_open_positions": 1, "max_quote_age_seconds": 30,
         "deviation_points": 10, "magic_number": 27102701,
-        "enable_demo_orders": False, "require_ai_confirmation": False,
+        "enable_demo_orders": False,
         "log_file": "mt5-forex/logs/mt5-forex.jsonl",
         "day_start_equity_file": "mt5-forex/state/day_start_equity.json",
     }
@@ -130,7 +130,7 @@ def supported_filling_mode(info):
     raise RuntimeError("No supported filling mode found for this symbol")
 
 
-def build_request(cfg: dict, signal: dict, info, tick, account) -> dict | None:
+def build_request(cfg: dict, signal: dict, info, tick, account) -> tuple[dict, float, float] | None:
     side = signal.get("signal")
     if side not in ("BUY", "SELL"):
         return None
