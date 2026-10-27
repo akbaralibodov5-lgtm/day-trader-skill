@@ -1,4 +1,4 @@
-""""Demo-only MT5 forex bot. Defaults to dry run and refuses live accounts."""
+"""Demo-only MT5 forex bot. Defaults to dry run and refuses live accounts."""
 from __future__ import annotations
 
 import argparse
