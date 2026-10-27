@@ -12,5 +12,6 @@
   "magic_number": 27102701,
   "enable_demo_orders": false,
   "require_ai_confirmation": false,
-  "log_file": "mt5-forex/logs/mt5-forex.jsonl"
+  "log_file": "mt5-forex/logs/mt5-forex.jsonl",
+  "day_start_equity_file": "mt5-forex/state/day_start_equity.json"
 }
