@@ -1,0 +1,16 @@
+{
+  "symbol": "EURUSD",
+  "timeframe": "M15",
+  "risk_percent": 0.5,
+  "reward_risk": 1.5,
+  "atr_stop_multiple": 1.5,
+  "max_daily_loss_percent": 2.0,
+  "max_spread_points": 25,
+  "max_open_positions": 1,
+  "max_quote_age_seconds": 30,
+  "deviation_points": 10,
+  "magic_number": 27102701,
+  "enable_demo_orders": false,
+  "log_file": "mt5-forex/logs/mt5-forex.jsonl",
+  "day_start_equity_file": "mt5-forex/state/day_start_equity.json"
+}
